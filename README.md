@@ -1,18 +1,18 @@
 # 📺 Weather App (iOS)
 
-A simple application for getting weather conditions.
+A simple application for obtaining weather conditions.
 
-This project is using the user's current location as default location. The app fetches all the necessary data from [Open-Meteo API](https://open-meteo.com/).
+This project uses the user's current location as the default location. The app fetches all the necessary data from [Open-Meteo API](https://open-meteo.com/).
 
 Made with React Native.
 Tested on iOS.
 
 ## 🛠️ Features
 
-- Current location conditions
-- Search for any location conditions
+- Current conditions for your location
+- Search for conditions in any city
 - Hourly conditions
-- 14 days conditions
+- 14-day forecast
 
 ## 🚧 Made with
 
