@@ -1,0 +1,17 @@
+export default {
+  sunny: require("../assets/sunny.png"),
+  minTemp: require("../assets/minTemp.png"),
+  maxTemp: require("../assets/maxTemp.png"),
+  moon: require("../assets/moon.png"),
+  clear_day_bg: require("../assets/clear_day.jpg"),
+  clear_night_bg: require("../assets/clear_night.jpg"),
+  clouds_bg: require("../assets/clouds_2.jpg"),
+  foggy_bg: require("../assets/foggy_1.jpg"),
+  moon_cloudy_bg: require("../assets/night_clouds.jpg"),
+  rainy_bg: require("../assets/rainy_2.jpg"),
+  thunderstorm_bg: require("../assets/thunderstorm_1.jpg"),
+  day_cloudy_bg: require("../assets/cloudy_day_1.jpg"),
+  drizzle_bg: require("../assets/drizzle.jpg"),
+  snow_bg: require("../assets/snow.jpg"),
+  openMeteo: require("../assets/openMeteo_logo.jpg"),
+}

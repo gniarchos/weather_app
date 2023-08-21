@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "DrGadget",
-    "slug": "DrGadget",
+    "name": "Weather Now",
+    "slug": "WeatherApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/weatherApp_logo_1.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash_weather.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -15,7 +15,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.niarchos.weathernow",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +27,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "expo-location": {
+      "locationAlwaysAndWhenInUsePermission": "Allow Weather Now to use your location."
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3f6834a3-45a7-473f-a8da-a6d3ac634b59"
+      }
     }
   }
 }
