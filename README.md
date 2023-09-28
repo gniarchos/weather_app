@@ -1,4 +1,4 @@
-# 📺 Weather App (iOS)
+# 📺 Weather App 
 
 A simple application for obtaining weather conditions.
 
