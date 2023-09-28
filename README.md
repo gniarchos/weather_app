@@ -10,7 +10,7 @@ Tested on iOS.
 ## 🛠️ Features
 
 - Dynamic weather background based on conditions
-- Current conditions for your location
+- Current conditions for user's location
 - Search for conditions in any city
 - Hourly predictions
 - 14-day forecast
