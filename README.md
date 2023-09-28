@@ -9,9 +9,10 @@ Tested on iOS.
 
 ## 🛠️ Features
 
+- Dynamic weather background based on conditions
 - Current conditions for your location
 - Search for conditions in any city
-- Hourly conditions
+- Hourly predictions
 - 14-day forecast
 
 ## 🚧 Made with
