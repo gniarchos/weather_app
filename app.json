@@ -2,7 +2,7 @@
   "expo": {
     "name": "Weather Now",
     "slug": "WeatherApp",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/weatherApp_logo_1.png",
     "userInterfaceStyle": "light",
