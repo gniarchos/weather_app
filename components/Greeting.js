@@ -66,20 +66,6 @@ export default function Greeting(props) {
 
   return (
     <View>
-      <Text style={Styles.greetingText}>{greetingMessage}</Text>
-      <View style={Styles.locationInfoContainer}>
-        <Entypo name="location-pin" size={50} color="white" />
-        <View style={Styles.locationInfoText}>
-          <Text style={Styles.locationCity}>{cityCountry[0]}</Text>
-          <Text style={Styles.locationCountry}>
-            {cityCountry[1] !== undefined
-              ? cityCountry[2] !== undefined
-                ? `${cityCountry[1]}, ${cityCountry[2]}`
-                : `${cityCountry[1]}`
-              : " "}
-          </Text>
-        </View>
-      </View>
       <View style={Styles.autocompleteContainer}>
         <AutocompleteDropdown
           inputContainerStyle={Styles.autocomplete}
@@ -103,6 +89,20 @@ export default function Greeting(props) {
             dropdownController.current = controller
           }}
         />
+      </View>
+      <Text style={Styles.greetingText}>{greetingMessage}</Text>
+      <View style={Styles.locationInfoContainer}>
+        <Entypo name="location-pin" size={50} color="white" />
+        <View style={Styles.locationInfoText}>
+          <Text style={Styles.locationCity}>{cityCountry[0]}</Text>
+          <Text style={Styles.locationCountry}>
+            {cityCountry[1] !== undefined
+              ? cityCountry[2] !== undefined
+                ? `${cityCountry[1]}, ${cityCountry[2]}`
+                : `${cityCountry[1]}`
+              : " "}
+          </Text>
+        </View>
       </View>
     </View>
   )

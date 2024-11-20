@@ -19,13 +19,13 @@ export default function TopBar(props) {
             `${props.day}, ${props.date} ${props.month}`}
           {/* {props.day}, {props.date} {props.month} */}
         </Text>
-        <Text style={Styles.localTimeText}>{props.localTime}</Text>
+        {/* <Text style={Styles.localTimeText}>{props.localTime}</Text> */}
       </View>
 
       {!props.isCustomLocation && (
         <TouchableOpacity onPress={props.updateWeather}>
           {!props.loading ? (
-            <Ionicons name="ios-reload-sharp" size={25} color="white" />
+            <AntDesign name="reload1" size={25} color="white" />
           ) : (
             <ActivityIndicator size="small" color="#ffffff" />
           )}

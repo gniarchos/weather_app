@@ -30,7 +30,8 @@ const Styles = StyleSheet.create({
   autocompleteContainer: {
     // borderColor: "white",
     // borderWidth: 2,
-    height: 270,
+    // height: 270,
+    marginTop: 20,
   },
 
   loader: {
@@ -141,10 +142,7 @@ const Styles = StyleSheet.create({
     paddingBottom: 20,
     display: "flex",
     flexDirection: "column",
-    // alignItems: "center",
     gap: 100,
-    // borderColor: "red",
-    // borderWidth: 3,
     borderBottomColor: "white",
     borderTopColor: "transparent",
     borderLeftColor: "transparent",
@@ -155,9 +153,7 @@ const Styles = StyleSheet.create({
   currentTemp: {
     display: "flex",
     flexDirection: "column",
-    gap: -8,
     paddingTop: 20,
-    // alignItems: "center",
   },
 
   currentTempText: {
@@ -165,12 +161,14 @@ const Styles = StyleSheet.create({
     fontSize: 100,
     color: "white",
     marginLeft: -10,
+    marginTop: -20,
   },
 
   feelsLikeText: {
     fontFamily: "Nunito_700Bold",
     color: "white",
     fontSize: 16,
+    padding: 0,
 
     //****TESTING****
     // color: "rgb(82, 88, 100)",
@@ -273,8 +271,12 @@ const Styles = StyleSheet.create({
   },
 
   scrollViewConditions: {
-    // paddingBottom: 30,
+    paddingBottom: 30,
     marginBottom: 50,
+    // height: "100%",
+    // height: "1500px",
+    border: "1px solid red",
+    zIndex: 1,
   },
 
   forecastContainer: {

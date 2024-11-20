@@ -526,7 +526,7 @@ export default function App() {
       >
         <SafeAreaView style={Styles.app}>
           <View style={Styles.appContainer}>
-            <View style={Styles.container}>
+            <View style={{ height: "100%" }}>
               <StatusBar style="light" />
               <TopBar
                 day={dayName}

@@ -7,8 +7,10 @@ import {
   Entypo,
   Feather,
   FontAwesome5,
+  MaterialIcons,
 } from "@expo/vector-icons"
 import Images from "./Images.js"
+import appJson from "../app.json"
 
 export default function CurrentWeather(props) {
   const [showFeelsLike, setShowFeelsLike] = useState(false)
@@ -280,10 +282,12 @@ export default function CurrentWeather(props) {
   }
 
   return (
-    <View style={{ height: 400 }}>
+    <View style={{ height: "100%", marginBottom: 10 }}>
       <ScrollView
-        style={Styles.scrollViewConditions}
+        style={{ height: "100%", marginBottom: 250 }}
+        // style={Styles.scrollViewConditions}
         showsVerticalScrollIndicator={false}
+        scrollEnabled={true}
       >
         <View style={Styles.currentWeatherContainer}>
           <View style={Styles.currentTemp}>
@@ -292,7 +296,7 @@ export default function CurrentWeather(props) {
             </Text>
             <TouchableOpacity
               onPress={switchCurrTempFeelsLike}
-              activeOpacity={1}
+              // activeOpacity={1}
             >
               <Text style={Styles.currentTempText}>
                 {isNaN(props.currTemp)
@@ -312,13 +316,23 @@ export default function CurrentWeather(props) {
 
             <View style={Styles.lowMaxCurrContainer}>
               <View style={Styles.lowMaxWrapper}>
-                <Ionicons name="caret-down" size={24} color="white" />
+                {/* <Ionicons name="caret-down" size={24} color="white" /> */}
+                <MaterialIcons
+                  name="keyboard-arrow-down"
+                  size={24}
+                  color="white"
+                />
                 <Text style={Styles.lowMaxText}>
                   {isNaN(props.lowCurrDayTemp) ? "-" : props.lowCurrDayTemp}
                 </Text>
               </View>
               <View style={Styles.lowMaxWrapper}>
-                <Ionicons name="caret-up" size={24} color="white" />
+                {/* <Ionicons name="caret-up" size={24} color="white" /> */}
+                <MaterialIcons
+                  name="keyboard-arrow-up"
+                  size={24}
+                  color="white"
+                />
                 <Text style={Styles.lowMaxText}>
                   {isNaN(props.maxCurrDayTemp) ? "-" : props.maxCurrDayTemp}
                 </Text>
@@ -348,7 +362,7 @@ export default function CurrentWeather(props) {
           />
           <Text style={Styles.footerText}>Open Meteo API</Text>
         </View>
-        <Text style={Styles.versionText}>Version 1.0.0</Text>
+        <Text style={Styles.versionText}>Version {appJson.expo.version}</Text>
       </ScrollView>
     </View>
   )
