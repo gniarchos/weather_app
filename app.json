@@ -18,7 +18,11 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.niarchos.weathernow",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.1.0",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show weather information.",
+        "NSLocationAlwaysUsageDescription": "We need your location to provide accurate weather updates."
+      }
     },
     "android": {
       "adaptiveIcon": {
